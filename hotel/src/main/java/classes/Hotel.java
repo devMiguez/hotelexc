@@ -7,6 +7,32 @@ public class Hotel {
     private String endereco;
     private String cnpj;
 
+    public Hotel() {
+        this.nomeHotel = "Hotel JPR" + nomeHotel;
+    }
+
+    public void perguntaCnpj() {
+        String cnpjDigitado = "";
+
+        while(!validaCnpj(cnpjDigitado)) {
+            System.out.println("Digite o cnpj da empresa: ");
+            Scanner leiaCnpj = new Scanner(System.in);
+            cnpjDigitado = leiaCnpj.nextLine();
+        }
+        setCnpj(cnpjDigitado);
+        System.out.println("");
+
+
+    }
+
+    public boolean validaCnpj(String cnpj) {
+        if (cnpj.length() == 14) {
+            return true;
+        }else {
+            return false;
+        }
+    }
+
 
     public String getNomeHotel() {
         return nomeHotel;
