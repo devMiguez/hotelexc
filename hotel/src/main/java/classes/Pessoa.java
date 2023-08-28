@@ -5,6 +5,12 @@ public class Pessoa {
     private String email;
     private int cpf;
 
+    public Pessoa(String nomePessoa, String email, int cpf) {
+        this.nomePessoa = nomePessoa;
+        this.email = email;
+        this.cpf = cpf;
+    }
+
     public String getNomePessoa() {
         return nomePessoa;
     }
