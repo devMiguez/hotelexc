@@ -5,10 +5,13 @@ public class Pessoa {
     private String email;
     private int cpf;
 
-    public Pessoa(String nomePessoa, String email, int cpf) {
+    public Pessoa(String nomePessoa) {
         this.nomePessoa = nomePessoa;
         this.email = email;
         this.cpf = cpf;
+    }
+
+    public Pessoa(String nomePessoa2, String email2, int cpf2) {
     }
 
     public String getNomePessoa() {

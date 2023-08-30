@@ -10,6 +10,11 @@ public class Cliente extends Pessoa {
         super(nomePessoa, email, cpf);
         this.endereco = endereco;
     }
+
+    public void exibirDetalhes(){
+        System.out.println("Nome: " +   this.getNomePessoa());
+        System.out.println("CPF: " + this.getCpf());
+    }
     
     public Endereco getEndereco() {
         return endereco;

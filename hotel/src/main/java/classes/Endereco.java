@@ -1,25 +1,25 @@
 package classes;
 
 public class Endereco {
-    private String estado;
+    private UnidadeFederativa uf;
     private String cidade;
     private String bairro;
     private String rua;
     private int numero;
 
-    public Endereco(String estado, String cidade, String bairro, String rua, int numero) {
-        this.estado = estado;
+    public Endereco(UnidadeFederativa uf, String cidade, String bairro, String rua, int numero) {
+        this.uf = uf;
         this.cidade = cidade;
         this.bairro= bairro;
         this.rua = rua;
         this.numero = numero;
     }
 
-    public String getEstado() {
-        return estado;
+    public UnidadeFederativa getEstado() {
+        return uf;
     }
-    public void setEstado(String estado) {
-        this.estado = estado;
+    public void setEstado(UnidadeFederativa uf) {
+        this.uf = uf;
     }
     public String getCidade() {
         return cidade;
