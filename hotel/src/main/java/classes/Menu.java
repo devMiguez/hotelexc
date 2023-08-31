@@ -2,6 +2,8 @@ package classes;
 
 import java.util.Scanner;
 
+import enums.UnidadeFederativa;
+
 public interface Menu {
     public static void menuPrincipal(){
         char opcaoDigitada;

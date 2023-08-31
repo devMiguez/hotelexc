@@ -4,11 +4,13 @@ import java.util.Scanner;
 
 public class Hotel {
     private String nomeHotel;
-    private String endereco;
+    private Endereco endereco;
     private String cnpj;
 
-    public Hotel() {
+    public Hotel(String nomeHotel, Endereco endereco) {
         this.nomeHotel = "Hotel JPR" + nomeHotel;
+        this.endereco = endereco;
+        perguntaCnpj();
     }
 
     public void perguntaCnpj() {
@@ -40,10 +42,10 @@ public class Hotel {
     public void setNomeHotel(String nomeHotel) {
         this.nomeHotel = nomeHotel;
     }
-    public String getEndereco() {
+    public Endereco getEndereco() {
         return endereco;
     }
-    public void setEndereco(String endereco) {
+    public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
     }
     public String getCnpj() {

@@ -1,5 +1,7 @@
 package classes;
 
+import enums.UnidadeFederativa;
+
 public class Endereco {
     private UnidadeFederativa uf;
     private String cidade;
